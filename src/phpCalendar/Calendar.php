@@ -212,6 +212,56 @@ class Calendar
         ]);
     }
 
+    public function usePortuguese()
+    {
+        $this->setDays([
+            'sunday' => [
+                'initials' => 'D',
+                'full' => 'Domingo'
+            ],
+            'monday' => [
+                'initials' => 'S',
+                'full' => 'Segunda',
+            ],
+            'tuesday' => [
+                'initials' => 'T',
+                'full' => 'Terça',
+            ],
+            'wednesday' => [
+                'initials' => 'Q',
+                'full' => 'Quarta',
+            ],
+            'thursday' => [
+                'initials' => 'Q',
+                'full' => 'Quinta',
+            ],
+            'friday' => [
+                'initials' => 'S',
+                'full' => 'Sexta',
+            ],
+            'saturday' => [
+                'initials' => 'S',
+                'full' => 'Sábado',
+            ],
+        ]);
+
+        $this->setMonths([
+            'january' => 'Janeiro',  
+            'february' => 'Fevereiro',  
+            'march' => 'Março',  
+            'april' => 'Abril',  
+            'may' => 'Maio',  
+            'june' => 'Junho',  
+            'july' => 'Julho',  
+            'august' => 'Agosto',  
+            'september' => 'Setembro',  
+            'october' => 'Outubro',  
+            'november' => 'Novembro',  
+            'december' => 'Dezembro'
+        ]);
+    }
+    
+    
     /**
      * Sets the array of month names. Useful when translating.
      *
